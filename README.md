@@ -27,9 +27,9 @@ The objectives of this exercise are:
 
 Example:
 
-Original repository : "github.com/COS30045/energy-webpage"
+Original repository : "github.com/rishmaf/COS30045-Data-Visualization/energy-webpage"
 
-Your forked repository : "github.com/yourusername/energy-webpage"
+Your forked repository : "github.com/yourusername/COS30045-Data-Visualization/energy-webpage"
 
 
 ---
@@ -40,8 +40,8 @@ Clone your forked repository to your local machine using **VS Code** or the term
 
 Example:
 
-```bash
 git clone https://github.com/yourusername/energy-webpage.git
+
 
 # Step 3 – Project Structure
 
