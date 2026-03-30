@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power Energy Solutions</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <button id="logo-btn" class="logo" title="Go to Home page">
+                    <img src="logo/Logo.png" alt="Power Energy Solutions Logo">
+                </button>
+            </div>
+            <ul class="nav-links">
+                <li><button class="nav-btn active" data-page="home">Home</button></li>
+                <li><button class="nav-btn" data-page="televisions">Televisions</button></li>
+                <li><button class="nav-btn" data-page="about">About Us</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Page -->
+        <div id="home" class="page active">
+            <section class="hero">
+                <h1>Welcome to Power Energy Solutions</h1>
+                <p class="hero-subtitle">Your trusted source for understanding appliance energy consumption in Australia.</p>
+            </section>
+            <div class="content-section">
+                <h2>Energy Efficiency Matters</h2>
+                <p>In Australia, household appliances account for a significant portion of residential energy consumption. Understanding how your devices consume power is the first step toward reducing your electricity bills and environmental impact.</p>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3>Average Household Consumption</h3>
+                        <p>The average Australian household consumes approximately 15-20 kWh per day, with appliances contributing significantly to this total.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Energy-Efficient Choices</h3>
+                        <p>Modern appliances with high energy ratings can reduce consumption by up to 40% compared to older models, saving you money annually.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Monitoring Your Usage</h3>
+                        <p>Smart meters and monitoring tools help Australians track real-time energy consumption and identify power-hungry appliances.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Televisions Page -->
+        <div id="televisions" class="page">
+            <h1>Television Energy Consumption Guide</h1>
+            <p>Learn how much power your television uses and how to minimize energy waste.</p>
+            <div class="content-section">
+                <h2>Understanding TV Power Consumption</h2>
+                <p>Television energy consumption varies significantly based on size, technology, and usage patterns.</p>
+                
+                <h3>Power Consumption by Technology</h3>
+                <div class="table-container">
+                    <table class="energy-table">
+                        <thead>
+                            <tr>
+                                <th>Technology</th>
+                                <th>55" TV (Average)</th>
+                                <th>Annual Cost (AUS)</th>
+                                <th>CO₂ Emissions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>LED TV</td>
+                                <td>80-150 W</td>
+                                <td>$30-$54</td>
+                                <td>0.35 tonnes</td>
+                            </tr>
+                            <tr>
+                                <td>QLED TV</td>
+                                <td>100-180 W</td>
+                                <td>$36-$65</td>
+                                <td>0.44 tonnes</td>
+                            </tr>
+                            <tr>
+                                <td>OLED TV</td>
+                                <td>90-170 W</td>
+                                <td>$32-$61</td>
+                                <td>0.41 tonnes</td>
+                            </tr>
+                            <tr>
+                                <td>Mini-LED TV</td>
+                                <td>110-200 W</td>
+                                <td>$40-$72</td>
+                                <td>0.50 tonnes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>Average Australian Viewing</h3>
+                <p>Australians watch an average of 3-4 hours of television daily. With an average TV consuming 100W, this equates to 300-400 Wh (0.3-0.4 kWh) per day dedicated to television viewing alone.</p>
+            </div>
+        </div>
+
+        <!-- About Us Page -->
+        <div id="about" class="page">
+            <h1>About Power Energy Solutions</h1>
+            <p>Dedicated to educating Australian households about energy consumption and efficiency.</p>
+            <div class="content-section">
+                <h2>Our Mission</h2>
+                <p>Power Energy Solutions is committed to helping Australian households understand and reduce their energy consumption. We provide accurate, practical information about how common household appliances use electricity, enabling consumers to make informed decisions about their energy usage.</p>
+
+                <h2>Why Energy Efficiency Matters in Australia</h2>
+                <p>Australia has one of the highest per-capita energy consumptions in the world. With rising electricity costs and increasing environmental concerns, understanding appliance energy consumption is more important than ever. Our goal is to empower households with knowledge to:</p>
+                <ul class="about-list">
+                    <li>Reduce monthly electricity bills</li>
+                    <li>Lower their carbon footprint</li>
+                    <li>Make sustainable appliance choices</li>
+                    <li>Understand energy labels and ratings</li>
+                </ul>
+
+                <h2>Key Facts About Australian Energy</h2>
+                <div class="facts-grid">
+                    <div class="fact-card">
+                        <h3>Growing Energy Demand</h3>
+                        <p>Australian households increasingly rely on air conditioning and heating, with climate control accounting for up to 40% of residential energy use.</p>
+                    </div>
+                    <div class="fact-card">
+                        <h3>Rising Costs</h3>
+                        <p>Electricity prices in Australia have risen significantly, making energy efficiency an important budget consideration for households.</p>
+                    </div>
+                    <div class="fact-card">
+                        <h3>Renewable Transition</h3>
+                        <p>Australia is transitioning to renewable energy sources, making the demand for energy-efficient appliances more critical than ever.</p>
+                    </div>
+                </div>
+
+                <h2>Contact & Information</h2>
+                <p>For more information about appliance energy consumption in Australia, consult Energy.gov.au or the Australian Appliance & Equipment Manufacturers' Association (AAEMA).</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Power Energy Solutions. All rights reserved.</p>
+        <p>Built with the assistance of Claude AI (Anthropic)</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
