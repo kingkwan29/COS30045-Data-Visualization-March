@@ -1,8 +1,65 @@
+// Parse CSV by simple line and comma splitting
+function parseCSV(csvText) {
+    const lines = csvText.trim().split('\n');
+    const headers = lines[0].split(',').map(h => h.trim());
+    const data = [];
+    
+    for (let i = 1; i < lines.length; i++) {
+        if (lines[i].trim() === '') continue;
+        
+        const values = lines[i].split(',').map(v => v.trim());
+        const obj = {};
+        
+        for (let j = 0; j < headers.length; j++) {
+            obj[headers[j]] = values[j] || '';
+        }
+        data.push(obj);
+    }
+    return data;
+}
+
+// Load CSV file and populate the table
+function loadAndPopulateTable() {
+    fetch('data/tv_power_consumption.csv')
+        .then(response => response.text())
+        .then(csvText => {
+            const data = parseCSV(csvText);
+            console.log('Parsed data:', data);
+            
+            const tbody = document.querySelector('.energy-table tbody');
+            if (!tbody) {
+                console.error('Table body not found');
+                return;
+            }
+            
+            // Clear existing rows
+            tbody.innerHTML = '';
+            
+            // Populate table with CSV data
+            data.forEach((row, index) => {
+                console.log('Row ' + index + ':', row);
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td>${row['Technology'] || ''}</td>
+                    <td>${row['Screen Size'] || ''}</td>
+                    <td>${row['Power Consumption (W)'] || ''}</td>
+                    <td>${row['Annual Cost (AUS)'] || ''}</td>
+                    <td>${row['CO2 Emissions (tonnes)'] || ''}</td>
+                `;
+                tbody.appendChild(tr);
+            });
+        })
+        .catch(error => console.error('Error loading CSV:', error));
+}
+
 // Navigation functionality
 document.addEventListener('DOMContentLoaded', function() {
     const navButtons = document.querySelectorAll('.nav-btn');
     const logoBtn = document.getElementById('logo-btn');
     const pages = document.querySelectorAll('.page');
+
+    // Load CSV data when page loads
+    loadAndPopulateTable();
 
     /**
      * Switch to a specific page
