@@ -6,12 +6,9 @@
     --accent-color: #00D97F;
     --text-color: #1a1a1a;
     --text-light: #555555;
-    --bg-color: #f8f9fa;
     --border-color: #e8eaed;
     --hover-color: #ecf7f2;
-    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
     --shadow-md: 0 8px 24px rgba(0, 168, 107, 0.12);
-    --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.1);
 }
 
 /* Global Styles */
@@ -21,8 +18,7 @@
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
+html {
     scroll-behavior: smooth;
 }
 
@@ -36,7 +32,6 @@ body {
 }
 
 main {
-    flex: 1;
     max-width: 1200px;
     margin: 0 auto;
     padding: 50px 20px;
@@ -46,8 +41,7 @@ main {
 /* Header and Navigation */
 header {
     background: white;
-    border-bottom: 1px solid var(--border-color);
-    position: sticky;
+    bosition: sticky;
     top: 0;
     z-index: 100;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
@@ -81,20 +75,8 @@ header {
     justify-content: center;
 }
 
-.logo:hover {
-    background: linear-gradient(135deg, var(--primary-light), var(--primary-color));
-    border-color: var(--accent-color);
-    box-shadow: 0 8px 24px rgba(0, 168, 107, 0.25);
-    transform: translateY(-2px);
-}
-
 .logo:active {
     transform: scale(0.95);
-}
-
-.logo svg {
-    display: block;
-    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
 }
 
 .logo img {
@@ -254,7 +236,6 @@ p {
     border-image: linear-gradient(90deg, var(--primary-color), var(--accent-color)) 1;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .content-section:hover {
     box-shadow: var(--shadow-md);
     transform: translateY(-2px);
@@ -416,36 +397,29 @@ p {
 
 /* Footer */
 footer {
-    background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%);
-    color: white;
+    background: white;  
     text-align: center;
     padding: 40px 20px;
     margin-top: 50px;
     border-top: 1px solid var(--border-color);
     position: relative;
     overflow: hidden;
-}
-
-footer::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 2px;
-    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 footer p {
-    margin: 10px 0;
+    margin: 10px;
     color: #cccccc;
     font-size: 0.95em;
     letter-spacing: 0.2px;
 }
 
 footer p:first-child {
-    color: var(--accent-color);
-    font-weight: 700;
+    color: black;   
+    font-weight: 400;
     font-size: 1em;
 }
 
