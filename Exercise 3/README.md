@@ -2,11 +2,11 @@
 
 ## Overview
 
-In this exercise, you will develop a **data story** based on the **TV Energy Consumption dataset**. Using the website created in **Exercise 0.2**, you will extend your work to present a meaningful narrative supported by data visualisations.
+This project presents a data story based on the TV Energy Consumption dataset, built by extending the website from Exercise 0.2.
 
-Your goal is to communicate insights from the dataset in a clear and engaging way through your **website and written explanation**.
+The story is designed to help an audience quickly understand what TV technologies and sizes are available, and how these choices relate to energy use.
 
-You must use the **Exercise 3 folder in your existing forked repository** and reuse the files created in **Exercise 0.2**.
+The website combines narrative text and storyboard visuals to communicate findings clearly.
 
 ---
 
@@ -14,26 +14,32 @@ You must use the **Exercise 3 folder in your existing forked repository** and re
 
 ### Audience
 
-The target audience for this visualisation includes:
+The primary audience is everyday TV buyers in Australia, especially households comparing options before purchasing.
+
+Secondary audiences include:
 
 - Consumers interested in **energy-efficient televisions**
 - Policy makers and regulators interested in **energy consumption trends**
 - Researchers studying **energy efficiency in consumer electronics**
 
-These audiences are interested in understanding how **television energy consumption varies across models, sizes, and technologies**, and how these factors influence overall energy usage.
+These groups want simple, evidence-based answers about availability and energy implications.
 
 ### Story Overview
 
-This visualisation explores patterns in **TV energy consumption** across different television models and specifications.
+The website follows a three-storyboard structure:
 
-The goal is to help viewers understand:
+- Storyboard 1 (Question 1): What type of TV screen technologies are currently available in Australia and which are the most frequent?
+- Storyboard 2 (Question 2): What screen sizes are currently available, and which are the most frequent?
+- Storyboard 3 (Question 5): What is the relationship between screen size and power use?
 
-- How energy consumption varies between television models
-- The relationship between **screen size and power consumption**
-- How **energy efficiency ratings** impact energy usage
-- Trends that may help consumers choose more **energy-efficient televisions**
+From the current dataset used in this project:
 
-The website presents these insights through visualisations and explanatory text that guide the viewer through the data.
+- Technology availability includes LED TV, QLED TV, OLED TV, and Mini-LED TV.
+- QLED TV and LED TV appear most frequently in this sample.
+- The most common screen sizes are 55 inch and 65 inch.
+- Screen size and power consumption show a positive relationship in this sample (larger sizes generally use more power).
+
+The website presents these findings with storyboard visuals and explanatory captions so viewers can follow the logic from question to conclusion.
 
 ---
 
@@ -41,17 +47,15 @@ The website presents these insights through visualisations and explanatory text 
 
 ### Data Source
 
-The dataset used in this project contains information about **television models and their energy consumption characteristics**, including power usage, screen size, technology type, and efficiency ratings.
-
-The dataset was provided as part of the course materials.
+The dataset contains television model attributes and energy-related values, including technology type, screen size, power consumption and cost
 
 ### Data Processing
 
 Before creating visualisations, the dataset was processed to ensure it was suitable for analysis. This included:
 
-- Cleaning missing or inconsistent values
-- Selecting relevant attributes for visualisation
-- Organising the data into formats suitable for web visualisation
+- Selecting attributes required by the storyboard questions
+- Grouping and comparing frequencies for technology types and screen sizes
+- Relating screen size values to power consumption values for comparison
 
 ### Privacy
 
@@ -59,11 +63,12 @@ The dataset does not contain any **personal or sensitive information**. It focus
 
 ### Accuracy and Limitations
 
-While the dataset provides useful information about TV energy consumption, there are some limitations:
+While the dataset supports clear storytelling, there are limitations:
 
-- The dataset may not include **all available television models**
-- Some information may be **outdated or incomplete**
-- Energy consumption may vary depending on **real-world usage conditions**
+- The sample used in this exercise is relatively small
+- It may not represent all brands or models sold in Australia
+- Real-world power use depends on brightness settings, viewing time, and user behaviour
+- Results should be interpreted as indicative patterns, not universal market truth
 
 These factors should be considered when interpreting the visualisations.
 
@@ -71,7 +76,7 @@ These factors should be considered when interpreting the visualisations.
 
 When presenting data visualisations, it is important to ensure that the information is represented **accurately and responsibly**.
 
-This project follows ethical data visualisation practices by:
+This project follows ethical data storytelling practices by:
 
 - Avoiding misleading visual representations
 - Clearly explaining the context of the data
@@ -81,24 +86,26 @@ This project follows ethical data visualisation practices by:
 
 ## AI Declaration
 
-Artificial Intelligence (AI) tools may have been used to assist with aspects of this assignment, such as:
+Artificial Intelligence (AI) tools were used to support parts of this assignment, such as:
 
 - Generating example code
 - Improving code structure
 - Assisting with documentation writing
+- Generating images
 
-All AI-generated assistance was reviewed, modified where necessary, and integrated responsibly into the project.
+All AI-assisted output was reviewed, edited, and validated by the student before inclusion.
 
 ---
 
 ## Website Storytelling
 
-The website has been updated to communicate a **data-driven story** based on the TV energy consumption dataset.
+The website has been updated to communicate a data-driven story through an interactive Storyboards section.
 
 The website includes:
 
-- Visualisations that present key insights from the dataset
-- Text explanations that help readers understand the meaning of the visualisations
-- Context that connects the data to real-world implications
+- Storyboard 1 visual focused on screen technology availability and frequency
+- Storyboard 2 visual focused on available screen sizes and most frequent sizes
+- Storyboard 3 visual focused on the relationship between screen size and power use
+- Short contextual text so readers understand each question and takeaway
 
 The aim is to guide the viewer through the data in a way that is **informative, engaging, and easy to understand**.
